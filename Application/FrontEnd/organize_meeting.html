@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organize Meeting</title>
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Organize Meeting</h1>
+
+        <form id="organizeMeetingForm">
+            <div class="form-group">
+                <label for="title">Title:</label>
+                <input type="text" class="form-control" id="title" required>
+            </div>
+            <div class="form-group">
+                <label for="meetingDate">Meeting Date:</label>
+                <input type="date" class="form-control" id="meetingDate" required>
+            </div>
+            <div class="form-group">
+                <label for="startTime">Start Time:</label>
+                <input type="time" class="form-control" id="startTime" required>
+            </div>
+            <div class="form-group">
+                <label for="duration">Duration (in hours):</label>
+                <input type="number" class="form-control" id="duration" required>
+            </div>
+            <div class="form-group">
+                <label for="meetingType">Meeting Type:</label>
+                <select class="form-control" id="meetingType" required>
+                    <option value="Classroom Training">Classroom Training</option>
+                    <option value="Online Training">Online Training</option>
+                    <option value="Conference Call">Conference Call</option>
+                    <option value="Business">Business</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="searchMember">Search and Add Members:</label>
+                <!-- Add your UI elements for searching and adding members here -->
+                <!-- For demonstration, you can add a simple input field for email -->
+                <input type="email" class="form-control" id="searchMember" placeholder="Enter member's email">
+                <!-- You can add JavaScript to handle member search and addition -->
+            </div>
+            <div class="form-group">
+                <label for="meetingRoom">Select Meeting Room:</label>
+                <!-- Add your UI elements for selecting a meeting room here -->
+                <!-- For demonstration, you can add a dropdown select element -->
+                <select class="form-control" id="meetingRoom" required>
+                    <option value="Meeting Room A">Meeting Room A</option>
+                    <option value="Meeting Room B">Meeting Room B</option>
+                    <option value="Meeting Room C">Meeting Room C</option>
+                    <!-- Add more meeting rooms as needed -->
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Save</button>
+            <a class="btn btn-secondary" href="manager.html">Cancel</a>
+        </form>
+    </div>
+
+    <!-- Add Bootstrap and jQuery scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Add your custom JavaScript for member search and other functionality -->
+    <script src="organize_meeting.js"></script>
+</body>
+</html>

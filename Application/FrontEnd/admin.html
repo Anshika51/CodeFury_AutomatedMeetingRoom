@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Admin Page</h1>
+        <p>Welcome, Admin!</p>
+
+        <div class="card mb-3">
+            <div class="card-header">
+                Admin Information
+            </div>
+            <div class="card-body">
+                <p>Name: John Doe</p>
+                <p>Email: admin@example.com</p>
+                <p>Last Logged-in: September 10, 2023 10:00 AM</p>
+            </div>
+        </div>
+
+        <h2>List of Meeting Rooms</h2>
+        <ul class="list-group">
+            <li class="list-group-item">Meeting Room A <a href="edit_room.html">Edit</a></li>
+            <li class="list-group-item">Meeting Room B <a href="edit_room.html">Edit</a></li>
+            <!-- Add more meeting rooms as needed -->
+        </ul>
+
+        <a class="btn btn-primary mt-3" href="create_room.html">Create Room</a>
+    </div>
+
+    <!-- Add Bootstrap and jQuery scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
